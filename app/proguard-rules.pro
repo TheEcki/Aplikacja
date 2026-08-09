@@ -1,0 +1,3 @@
+-dontwarn kotlin.**
+-keep class pl.vitaltrack.demo.** { *; }
+-dontwarn androidx.health.**

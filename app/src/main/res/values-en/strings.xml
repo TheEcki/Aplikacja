@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VitalTrack</string>
+    <string name="tab_today">Today</string>
+    <string name="tab_activity">Activity</string>
+    <string name="tab_health">Health</string>
+    <string name="tab_devices">Devices</string>
+    <string name="tab_profile">Profile</string>
+    <string name="steps">Steps</string>
+    <string name="heart_rate">Heart rate</string>
+    <string name="sleep">Sleep</string>
+    <string name="calories">Calories</string>
+    <string name="distance">Distance</string>
+    <string name="move">Move minutes</string>
+    <string name="cardio">Cardio points</string>
+    <string name="workouts">Workouts</string>
+    <string name="trends">Trends</string>
+    <string name="goals">Goals</string>
+    <string name="sync">Sync now</string>
+    <string name="connect">Connect</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="forget">Forget watch</string>
+    <string name="key">Pairing key</string>
+    <string name="save_key">Save key</string>
+    <string name="no_data">No data</string>
+    <string name="unsupported">Not supported by this model</string>
+    <string name="export">Export data</string>
+    <string name="empty_hr">No heart-rate samples — connect your watch</string>
+    <string name="empty_sleep">No sleep data</string>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VitalTrack</string>
+    <string name="tab_today">Dziś</string>
+    <string name="tab_activity">Aktywność</string>
+    <string name="tab_health">Zdrowie</string>
+    <string name="tab_devices">Urządzenia</string>
+    <string name="tab_profile">Profil</string>
+    <string name="steps">Kroki</string>
+    <string name="heart_rate">Tętno</string>
+    <string name="sleep">Sen</string>
+    <string name="calories">Kalorie</string>
+    <string name="distance">Dystans</string>
+    <string name="move">Minuty ruchu</string>
+    <string name="cardio">Punkty kardio</string>
+    <string name="workouts">Treningi</string>
+    <string name="trends">Trendy</string>
+    <string name="goals">Cele</string>
+    <string name="sync">Synchronizuj</string>
+    <string name="connect">Połącz</string>
+    <string name="disconnect">Rozłącz</string>
+    <string name="forget">Zapomnij zegarek</string>
+    <string name="key">Klucz parowania</string>
+    <string name="save_key">Zapisz klucz</string>
+    <string name="no_data">Brak danych</string>
+    <string name="unsupported">Nieobsługiwane przez ten model</string>
+    <string name="export">Eksport danych</string>
+    <string name="empty_hr">Brak próbek tętna — połącz zegarek</string>
+    <string name="empty_sleep">Brak danych o śnie</string>
+</resources>
