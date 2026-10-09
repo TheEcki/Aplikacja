@@ -25,6 +25,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
+import kotlinx.serialization.json.JsonArray
 import kotlinx.serialization.json.JsonObject
 import kotlinx.serialization.json.contentOrNull
 import kotlinx.serialization.json.jsonPrimitive
@@ -111,9 +112,14 @@ fun StationDetailScreen(api: BtsApi, stationId: Int, onBack: () -> Unit) {
         Text("Pozwolenia UKE (${permits.size})", style = MaterialTheme.typography.titleMedium)
         if (permits.isEmpty()) Text("Brak pozwoleń.")
         permits.forEach { p ->
-            val title = p.str("number") ?: p.str("name") ?: p.str("id") ?: "Pozwolenie"
+            val number = p.str("decision_number") ?: "Pozwolenie ${p.str("id") ?: ""}".trim()
             val band = p["band"]?.let { (it as? JsonObject)?.str("name") }
-            Text(listOfNotNull(title, band).joinToString("  •  "), modifier = Modifier.padding(vertical = 4.dp))
+            val sectors = (p["sectors"] as? JsonArray)?.size
+            val details = listOfNotNull(band, sectors?.let { "sektorów: $it" }).joinToString("  •  ")
+            Column(modifier = Modifier.padding(vertical = 4.dp)) {
+                Text(number, style = MaterialTheme.typography.bodyMedium)
+                if (details.isNotEmpty()) Text(details, style = MaterialTheme.typography.bodySmall)
+            }
         }
     }
 }
